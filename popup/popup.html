@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booth Shop Blocker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚫 Booth Shop Blocker</h1>
+      <p class="subtitle">ブロック中のショップ一覧</p>
+    </header>
+
+    <main>
+      <div id="emptyState" class="empty-state" style="display: none;">
+        <div class="empty-icon">📋</div>
+        <p>ブロック中のショップはありません</p>
+        <p class="empty-hint">ショップページで「ブロック」ボタンをクリックしてください</p>
+      </div>
+
+      <div id="shopList" class="shop-list"></div>
+    </main>
+
+    <footer>
+      <div class="stats">
+        <span id="blockedCount">0</span> 件のショップをブロック中
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

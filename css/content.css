@@ -1,0 +1,80 @@
+/* コンテンツスクリプト用CSS */
+
+/* ブロックボタンコンテナ */
+.booth-shop-blocker-container {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f7f8fa;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+/* ブロックボタン */
+.booth-shop-blocker-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.booth-shop-blocker-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.booth-shop-blocker-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* メモ表示エリア */
+.booth-shop-blocker-memo {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-left: 3px solid #fc4d50;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.booth-shop-blocker-memo .memo-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.booth-shop-blocker-memo .memo-content {
+  color: #666;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* ブロック済み商品カード（非表示） */
+.item-card[data-blocked-shop="true"] {
+  display: none !important;
+}
+
+/* モバイル対応 */
+@media screen and (max-width: 743px) {
+  .booth-shop-blocker-container {
+    margin: 8px 0;
+    padding: 8px;
+  }
+  
+  .booth-shop-blocker-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .booth-shop-blocker-memo {
+    font-size: 12px;
+  }
+}
